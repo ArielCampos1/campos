@@ -94,7 +94,7 @@ chmod +x /bin/MudarLimite
 wget https://raw.githubusercontent.com/JorisBRA/jorisBra/master/MudarSenha -O /bin/MudarSenha
 chmod +x /bin/MudarSenha
 
-wget https://raw.githubusercontent.com/JorisBRA/jorisBra/master/ConfVps -O /bin/ConfVPS
+wget https://raw.githubusercontent.com/ArielCampos1/campos/master/ConfVPS -O /bin/ConfVPS
 chmod +x /bin/ConfVPS
 
 wget https://raw.githubusercontent.com/JorisBRA/jorisBra/master/MudarValidade -O /bin/MudarValidade
@@ -155,6 +155,7 @@ echo -e "20|\033[01;33m•-->\033[1;34m UserClear (Limpa Usuarios Vencidos)\033[
 echo -e "21|\033[01;33m•-->\033[1;34m KernelControl (Procura ATT para Kernel ou Remove)\033[0m"
 echo -e "22|\033[01;33m•-->\033[1;34m SSHMonitor (Monitor Total de Usuarios Conectados)\033[0m"
 echo -e "23|\033[01;33m•-->\033[1;34m Instala SOCKS (Instala na Porta 8080)\033[0m"
+echo -e "24|\033[01;33m•-->\033[1;34m Tcptweaker (Melhora a velocidade e estabilidade da conexão Proxy)\033[0m"
 echo""
 echo""
 read -p " Selecione uma opção entre (01 a 23): " opcao
@@ -240,6 +241,10 @@ case $opcao in
   PackSSH;;
  23)
   Socks.py
+  sleep 5
+  PackSSH;;
+  24)
+  tcptweaker.sh
   sleep 5
   PackSSH;;
 esac
