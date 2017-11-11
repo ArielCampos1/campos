@@ -19,12 +19,12 @@ cyanClaro="\033[1;36m"
 branco="\033[1;37m"
 
 echo -e "\033[1;30m----------------------------------------------------------------------\033[0m"
-echo -e "\033[1;34m              ____            _     ____ ____  _   _                  \033[0m"
-echo -e "\033[1;34m             |  _ \ __ _  ___| | __/ ___/ ___|| | | | By: @MrCoppens  \033[0m" 
-echo -e "\033[1;34m             | |_) / _  |/ __| |/ /\___ \___ \| |_| |                 \033[0m" 
-echo -e "\033[1;34m             |  __/ (_| | (__|   <  ___) |__) |  _  |                 \033[0m" 
-echo -e "\033[1;34m             |_|   \__,_|\___|_|\_\|____/____/|_| |_| V. 2.4          \033[0m"
-echo -e "\033[1;34m                          ARIEL CAMPOS                                \033[0m"
+echo -e "\033[1;34m                      _       ____ ____  _   _                        \033[0m"
+echo -e "\033[1;34m                     | | ___ / ___/ ___|| | | |                      \033[0m" 
+echo -e "\033[1;34m                     | |/ __ \___ \___ \| |_| |                       \033[0m" 
+echo -e "\033[1;34m                     | | (__  ___) |__) |  _  |                       \033[0m" 
+echo -e "\033[1;34m                     |_|\___ |____/____/|_| |_| V. 2.7                \033[0m"
+echo -e "\033[1;34m                            ARIEL CAMPOS                          \033[0m"
 echo -e "\033[1;30m----------------------------------------------------------------------\033[0m"
 
 sleep 5
@@ -112,9 +112,6 @@ chmod +x /bin/KernelControl
 wget https://raw.githubusercontent.com/JorisBRA/jorisBra/master/DadosMonitor -O /bin/DadosMonitor
 chmod +x /bin/DadosMonitor
 
-wget https://raw.githubusercontent.com/JorisBRA/jorisBra/master/Atualizador -O /bin/Atualizador
-chmod +x /bin/Atualizador
-
 wget https://raw.githubusercontent.com/JorisBRA/jorisBra/master/OpenVPN -O /bin/OpenVPN
 chmod +x /bin/OpenVPN
 
@@ -132,33 +129,32 @@ clear
 tput setaf 8 ; tput setab 5 ; tput bold ; printf '%30s%s%-15s\n' "Config" ; tput sgr0
 echo ""
 echo -e OBS:    Digite - Config - para acessar esse PACK
-echo -e "|01|\033[01;34m•====> ConfVPS (CONFIGURA A VPS|SQUID3|) \033[01;34m"
-echo -e "|02|\033[01;33m•====> UserCreate (Criar Usuarios SSH)\033[0m"
-echo -e "|03|\033[01;33m•====> UserBackup (Gerencia Backup dos Usuarios SSH)\033[0m"
-echo -e "|04|\033[01;33m•====> CpuMonitor (Monitora o Uso da CPU, RAM e UPTIME)\033[0m"
-echo -e "|05|\033[01;33m•====> UserMonitor (Monitora os Usuarios Conectados)\033[0m"
-echo -e "|06|\033[01;33m•====> DadosMonitor (Monitora o Uso de Dados/Banda|in||out|)\033[0m"
-echo -e "|07|\033[01;33m•====> VNC (Ativa a Interface Gráfica no Servidor)\033[0m"
-echo -e "|08|\033[01;33m•====> ClearCache (Limpa Cache e Swap da Maquina)\033[0m"
-echo -e "|09|\033[01;33m•====> OpenUDP (Libera a Porta UDP para Ligacão e Jogos)\033[0m"
-echo -e "|10|\033[01;33m•====> SpeedTest (Testa a Velocidade de Link do Servidor)\033[0m"
-echo -e "|11|\033[01;33m•====> Banner (Mensagem para Usuario Quando Conectar)\033[0m"
-echo -e "|12|\033[01;33m•====> LimiterSSH (Limita as Conexoes de Cada Usuario)\033[0m"
-echo -e "|13|\033[01;33m•====> MudarLimite (Muda o Limite do Usuario)\033[0m"
-echo -e "|14|\033[01;33m•====> MudarSenha (Muda a Senha do Usuario)\033[0m"
-echo -e "|15|\033[01;33m•====> MudarValidade (Muda a Data de Validade do Usuario)\033[0m"
-echo -e "|16|\033[01;33m•====> UserDel (Deleta Usuario)\033[0m"
-echo -e "|17|\033[01;33m•====> addhost (Adiciona Novo Host ao Squid)\033[0m"
-echo -e "|18|\033[01;33m•====> OpenVPN OI\033[0m""\033[0;34m[OFF]\033[0;34m""\033[01;33m(Configura e Gerencia Usuarios .ovpn)\033[0m"
-echo -e "|19|\033[01;33m•====> OpenVPN VIVO\033[0m""\033[0;34m[OFF]\033[0;34m""\033[01;33m(Configura e Gerencia Usuarios .ovpn)\033[0m"
-echo -e "|20|\033[01;33m•====> UserClear (Limpa Usuarios Vencidos)\033[0m"
-echo -e "|21|\033[01;33m•====> KernelControl (Procura ATT para Kernel ou Remove)\033[0m"
-echo -e "|22|\033[01;33m•====> SSHMonitor (Monitor Total de Usuarios Conectados)\033[0m"
-echo -e "|23|\033[01;33m•====> Instala SOCKS (Instala na Porta 8080)\033[01;34m"
-echo -e "|24|\033[01;31m•====> Atualizador PackSSH (Atualiza o Pack)\033[0m"
+echo -e "01|\033[01;34m•====> ConfVPS (CONFIGURA A VPS|SQUID3|) \033[01;34m"
+echo -e "02|\033[01;33m•====> UserCreate (Criar Usuarios SSH)\033[0m"
+echo -e "03|\033[01;33m•====> UserBackup (Gerencia Backup dos Usuarios SSH)\033[0m"
+echo -e "04|\033[01;33m•====> CpuMonitor (Monitora o Uso da CPU, RAM e UPTIME)\033[0m"
+echo -e "05|\033[01;33m•====> UserMonitor (Monitora os Usuarios Conectados)\033[0m"
+echo -e "06|\033[01;33m•====> DadosMonitor (Monitora o Uso de Dados/Banda|in||out|)\033[0m"
+echo -e "07|\033[01;33m•====> VNC (Ativa a Interface Gráfica no Servidor)\033[0m"
+echo -e "08|\033[01;33m•====> ClearCache (Limpa Cache e Swap da Maquina)\033[0m"
+echo -e "09|\033[01;33m•====> OpenUDP (Libera a Porta UDP para Ligacão e Jogos)\033[0m"
+echo -e "10|\033[01;33m•====> SpeedTest (Testa a Velocidade de Link do Servidor)\033[0m"
+echo -e "11|\033[01;33m•====> Banner (Mensagem para Usuario Quando Conectar)\033[0m"
+echo -e "12|\033[01;33m•====> LimiterSSH (Limita as Conexoes de Cada Usuario)\033[0m"
+echo -e "13|\033[01;33m•====> MudarLimite (Muda o Limite do Usuario)\033[0m"
+echo -e "14|\033[01;33m•====> MudarSenha (Muda a Senha do Usuario)\033[0m"
+echo -e "15|\033[01;33m•====> MudarValidade (Muda a Data de Validade do Usuario)\033[0m"
+echo -e "16|\033[01;33m•====> UserDel (Deleta Usuario)\033[0m"
+echo -e "17|\033[01;33m•====> addhost (Adiciona Novo Host ao Squid)\033[0m"
+echo -e "18|\033[01;33m•====> OpenVPN OI\033[0m""\033[0;34m[OFF]\033[0;34m""\033[01;33m(Configura e Gerencia Usuarios .ovpn)\033[0m"
+echo -e "19|\033[01;33m•====> OpenVPN VIVO\033[0m""\033[0;34m[OFF]\033[0;34m""\033[01;33m(Configura e Gerencia Usuarios .ovpn)\033[0m"
+echo -e "20|\033[01;33m•====> UserClear (Limpa Usuarios Vencidos)\033[0m"
+echo -e "21|\033[01;33m•====> KernelControl (Procura ATT para Kernel ou Remove)\033[0m"
+echo -e "22|\033[01;33m•====> SSHMonitor (Monitor Total de Usuarios Conectados)\033[0m"
+echo -e "23|\033[01;33m•====> Instala SOCKS (Instala na Porta 8080)\033[01;34m"
 echo""
 echo""
-read -p " Selecione a opção [01-23]: " opcao
+read -p " Selecione uma opção entre (01 a 23): " opcao
 
 case $opcao in
  01)
@@ -242,10 +238,6 @@ case $opcao in
  23)
   Socks.py
   sleep 5
-  PackSSH;;
- 24)
-  Atualizador
-  sleep 2
   PackSSH;;
 esac
 
