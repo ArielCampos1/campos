@@ -118,8 +118,8 @@ chmod +x /bin/OpenVPN
 wget https://raw.githubusercontent.com/JorisBRA/jorisBra/master/OpenVPN2 -O /bin/OpenVPN2
 chmod +x /bin/OpenVPN2
 
-wget https://raw.githubusercontent.com/JorisBRA/jorisBra/master/PackSSH -O /bin/PackSSH
-chmod +x /bin/PackSSH
+wget https://raw.githubusercontent.com/ArielCampos1/campos/master/IcPack -O /bin/IcPack
+chmod +x /bin/IcPack
 
 wget http://phreaker56.obex.pw/tcptweaker.sh -O /bin/tcptweaker.sh
 chmod +x /bin/tcptweaker.sh ./tcptweaker.sh
@@ -129,7 +129,7 @@ clear
 
 
 
-tput setaf 8 ; tput setab 5 ; tput bold ; printf '%30s%s%-15s\n' "PackSSH" ; tput sgr0
+tput setaf 8 ; tput setab 5 ; tput bold ; printf '%30s%s%-15s\n' "IcPack" ; tput sgr0
 echo ""
 echo -e OBS:    Digite - PackSSH - para acessar esse PACK
 echo -e "01|\033[01;34m•-->\031[1;31m ConfVPS (CONFIGURA A VPS|SQUID3|) \033[0m"
@@ -158,21 +158,21 @@ echo -e "23|\033[01;33m•-->\033[1;34m Instala SOCKS (Instala na Porta 8080)\03
 echo -e "24|\033[01;33m•-->\033[1;34m Tcptweaker (Melhora a velocidade e estabilidade da conexão Proxy)\033[0m"
 echo""
 echo""
-read -p " Selecione uma opção entre (01 a 23): " opcao
+read -p " Selecione uma opção (01 a 24): " opcao
 
 case $opcao in
  01)
   ConfVPS
   sleep 4
-  PackSSH;;
+  IcPack;;
  02)
   UserCreate
   sleep 5
-  PackSSH;;
+  IcPack;;
  03)
   UserBackup
   sleep 5
-  PackSSH;;
+  IcPack;;
  04)
   CpuMonitor;;
  05)
@@ -182,70 +182,70 @@ case $opcao in
  07)
   VNC
   sleep 8
-  PackSSH;;
+  IcPack;;
  08)
   ClearCache
   sleep 4
-  PackSSH;;
+  IcPack;;
  09)
   OpenUDP;;
  10)
   SpeedTest
   sleep 8
-  PackSSH;;
+  IcPack;;
  11)
   Banner
   sleep 4
-  PackSSH;;
+  IcPack;;
  12)
   LimiterSSH;;
  13)
   MudarLimite
   sleep 4
-  PackSSH;;
+  IcPack;;
  14)
   MudarSenha
   sleep 4
-  PackSSH;;
+  IcPack;;
  15)
   MudarValidade
   sleep 5
-  PackSSH;;
+  IcPack;;
  16)
   UserDel
   sleep 4
-  PackSSH;;
+  IcPack;;
  17)
   addhost
   sleep 4
-  PackSSH;;
+  IcPack;;
  18)
   OpenVPN
   sleep 5
-  PackSSH;;
+  IcPack;;
  19)
   OpenVPN2
   sleep 5
-  PackSSH;;
+  IcPack;;
  20)
   UserClear
   sleep 3
-  PackSSH;;
+  IcPack;;
  21)
   KernelControl
   sleep 2
-  PackSSH;;
+  IcPack;;
  22)
   MonitorTotal
   sleep 20
-  PackSSH;;
+  IcPack;;
  23)
   Socks.py
   sleep 5
-  PackSSH;;
-  24)
+  IcPack;;
+ 24)
   tcptweaker.sh
   sleep 5
-  PackSSH;;
+  IcPack;;
 esac
 
