@@ -29,8 +29,8 @@ echo -e "\033[1;30m-------------------------------------------------------------
 
 sleep 5
 
-tput setaf 8 ; tput setab 5 ; tput bold ; printf '%30s%s%-15s\n' "INSTALANDO PACKSSH" ; tput sgr0
-echo -e "\033[1;34m INSTALANDO...\033[1;32m"
+tput setaf 8 ; tput setab 5 ; tput bold ; printf '%30s%s%-15s\n' "INSTALANDO IcSSH" ; tput sgr0
+echo -e "\033[1;34m INSTALANDO... AGUARDE\033[0m"
 
 apt-get update
 apt-get install bc 
