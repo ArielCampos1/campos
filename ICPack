@@ -131,7 +131,7 @@ clear
 
 tput setaf 8 ; tput setab 5 ; tput bold ; printf '%30s%s%-15s\n' "IcPack" ; tput sgr0
 echo -e "\033[0;32m--------------------------------------------------------------\033[0m"
-echo -e  SCRIPT EDITADO POR "\033[1;31mARIEL CAMPOS033\[0m | 033[1;31mTELEGRAM @ArielS0\033[0m"
+echo -e  SCRIPT EDITADO POR "\033[1;31mARIEL CAMPOS033\[0m" | TELEGRAM @ArielS
 echo -e "\033[0;32m--------------------------------------------------------------\033[0m"
 echo ""
 echo -e "\033[0;32m--------------------------------------------------------------\033[0m"
@@ -157,8 +157,8 @@ echo -e "\033[1;31m16\033[0m|\033[01;33m•-->\033[1;34m CpuMonitor (Monitora o 
 echo -e "\033[1;31m17\033[0m|\033[01;33m•-->\033[1;34m DadosMonitor (Monitora o Uso de Dados/Banda|in||out|)\033[0m"
 echo -e "\033[1;31m18\033[0m|\033[01;33m•-->\033[1;34m VNC (Ativa a Interface Gráfica no Servidor)\033[0m"
 echo -e "\033[1;31m19\033[0m|\033[01;33m•-->\033[1;34m ClearCache (Limpa Cache e Swap da Maquina)\033[0m"
-echo -e "\033[1;31m20\033[0m|\033[01;33m•-->\033[1;34m OpenVPN OI\033[0m""\033[0;31m[OFF]\033[0;31m""\033[01;33m(Configura e Gerencia Usuarios .ovpn)\033[0m"
-echo -e "\033[1;31m21\033[0m|\033[01;33m•-->\033[1;34m OpenVPN VIVO\033[0m""\033[0;31m[OFF]\033[0;31m""\033[01;33m(Configura e Gerencia Usuarios .ovpn)\033[0m"
+echo -e "\033[1;31m20\033[0m|\033[01;33m•-->\033[1;34m OpenVPN OI\033[0m""\033[0;31m[OFF]\033[0;34m""\033[01;33m(Configura e Gerencia Usuarios .ovpn)\033[0m"
+echo -e "\033[1;31m21\033[0m|\033[01;33m•-->\033[1;34m OpenVPN VIVO\033[0m""\033[0;31m[OFF]\033[0;34m""\033[01;33m(Configura e Gerencia Usuarios .ovpn)\033[0m"
 echo -e "\033[1;31m22\033[0m|\033[01;33m•-->\033[1;34m KernelControl (Procura ATT para Kernel ou Remove)\033[0m"
 echo -e "\033[1;31m23\033[0m|\033[01;33m•-->\033[1;34m Tcptweaker (Melhora a velocidade e estabilidade da conexão Proxy)\033[0m"
 echo -e "\033[1;31m24\033[0m|\033[01;33m•-->\033[1;34m Instala SOCKS (Instala na Porta 8080)\033[0m"
