@@ -130,9 +130,6 @@ clear
 
 
 tput setaf 8 ; tput setab 5 ; tput bold ; printf '%30s%s%-15s\n' "IcPack" ; tput sgr0
-echo -e "\033[0;32m--------------------------------------------------------------\033[0m"
-echo -e  SCRIPT EDITADO POR "\033[1;31mARIEL CAMPOS\033[0m" | TELEGRAM: @ArielS0
-echo -e "\033[0;32m--------------------------------------------------------------\033[0m"
 echo ""
 echo -e "\033[0;32m--------------------------------------------------------------\033[0m"
 echo -e OBS:    Digite - "\033[0;31mIcPack\033[0m" - para acessar o menu de gerenciamento 
